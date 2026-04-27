@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projects page for ABISHEK.M, professionally known as AS_Edits, with live GitHub-powered repository cards."
+    />
+    <title>Projects | AS_Edits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/as-edits-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page--projects">
+    <div class="ambient-backdrop" aria-hidden="true">
+      <div class="ambient-grid"></div>
+      <div class="ambient-glow ambient-glow--one"></div>
+      <div class="ambient-glow ambient-glow--two"></div>
+      <div class="ambient-glow ambient-glow--three"></div>
+      <div class="light-beam light-beam--one"></div>
+      <div class="light-beam light-beam--two"></div>
+    </div>
+    <div class="particle-field" id="particle-field" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark brand-mark--logo">
+            <img class="brand-logo" src="assets/as-edits-logo.png" alt="AS_Edits logo" />
+          </span>
+          <span class="brand-copy">AS_Edits</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="stack.html">Stack</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a
+          class="nav-button"
+          href="https://github.com/asedits57"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero shell">
+        <div class="page-hero__panel reveal">
+          <div class="page-hero__copy">
+            <p class="section-kicker">Project Archive</p>
+            <h1>Live repos, cleaner layout, stronger visuals.</h1>
+            <p>
+              This page gathers the live GitHub work into a cleaner showcase. Each
+              card is connected to the public account, so the portfolio reflects
+              real output, recent updates, and the direction of the work over
+              time.
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="https://github.com/asedits57" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+              <a class="button-secondary" href="contact.html">Start A Build</a>
+            </div>
+          </div>
+
+          <div class="page-hero__stat-grid">
+            <article class="page-hero__stat">
+              <span>Public repos</span>
+              <strong id="stat-repos">--</strong>
+            </article>
+            <article class="page-hero__stat">
+              <span>Community</span>
+              <strong id="stat-followers">--</strong>
+            </article>
+            <article class="page-hero__stat">
+              <span>Network</span>
+              <strong id="stat-following">--</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="page-hero__art reveal">
+          <div class="art-orbit"></div>
+          <div class="art-stack">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre class="glass-code" id="terminal-feed">syncing live GitHub project feed...</pre>
+        </div>
+      </section>
+
+      <section class="section shell reveal" aria-labelledby="projects-page-title">
+        <div class="section-heading">
+          <p class="section-kicker">GitHub Powered</p>
+          <h2 id="projects-page-title">Featured repositories from the AS_Edits / ABISHEK.M account.</h2>
+          <p>
+            The cards below load from GitHub at runtime, so this page keeps itself
+            current as new work gets shipped.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid" data-repo-limit="12" aria-live="polite">
+          <article class="project-card skeleton-card">
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </article>
+          <article class="project-card skeleton-card">
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </article>
+          <article class="project-card skeleton-card">
+            <div class="skeleton-line skeleton-line--title"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-line--short"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell reveal" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <p class="section-kicker">What The Work Signals</p>
+          <h2 id="signals-title">A repo list is more useful when it tells a story.</h2>
+        </div>
+        <div class="impact-grid">
+          <article class="impact-card">
+            <span class="impact-index">01</span>
+            <h3>Current output</h3>
+            <p>
+              The feed updates from the public account, which keeps this page tied
+              to the actual pace of shipping.
+            </p>
+          </article>
+          <article class="impact-card">
+            <span class="impact-index">02</span>
+            <h3>Fullstack direction</h3>
+            <p>
+              Repository metadata, languages, and live links help visitors read
+              both the frontend and systems side of the work.
+            </p>
+          </article>
+          <article class="impact-card">
+            <span class="impact-index">03</span>
+            <h3>Showcase ready</h3>
+            <p>
+              The visual layer turns plain repo data into something more portfolio
+              worthy without losing the real GitHub connection.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <p>
+        <span id="current-year"></span> ABISHEK.M / AS_Edits. Projects page powered by live
+        GitHub data.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

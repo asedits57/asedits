@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact page for ABISHEK.M, professionally known as AS_Edits, with portfolio links and collaboration paths."
+    />
+    <title>Contact | AS_Edits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/as-edits-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page--contact">
+    <div class="ambient-backdrop" aria-hidden="true">
+      <div class="ambient-grid"></div>
+      <div class="ambient-glow ambient-glow--one"></div>
+      <div class="ambient-glow ambient-glow--two"></div>
+      <div class="ambient-glow ambient-glow--three"></div>
+      <div class="light-beam light-beam--one"></div>
+      <div class="light-beam light-beam--two"></div>
+    </div>
+    <div class="particle-field" id="particle-field" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav shell">
+        <a class="brand" href="index.html">
+          <span class="brand-mark brand-mark--logo">
+            <img class="brand-logo" src="assets/as-edits-logo.png" alt="AS_Edits logo" />
+          </span>
+          <span class="brand-copy">AS_Edits</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="stack.html">Stack</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <a
+          class="nav-button"
+          href="https://github.com/asedits57"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero shell">
+        <div class="page-hero__panel reveal">
+          <div class="page-hero__copy">
+            <p class="section-kicker">Contact Layer</p>
+            <h1>Everything here should lead somewhere useful.</h1>
+            <p>
+              This contact layer keeps the portfolio practical. Whether someone
+              wants to review the work, understand the stack, or jump straight to
+              GitHub, every route is designed to feel simple, useful, and
+              intentional.
+            </p>
+            <div class="hero-actions">
+              <a class="button-primary" href="projects.html">Browse Projects</a>
+              <a class="button-secondary" href="https://github.com/asedits57" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-hero__art reveal">
+          <div class="art-orbit"></div>
+          <pre class="glass-code" id="contact-terminal-feed">routes active:
+home -> site overview
+projects -> repo feed
+stack -> core skills
+contact -> start a build</pre>
+        </div>
+      </section>
+
+      <section class="page-section shell reveal" aria-labelledby="contact-grid-title">
+        <div class="section-heading">
+          <p class="section-kicker">Paths</p>
+          <h2 id="contact-grid-title">Choose the route that fits the conversation.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="projects.html">
+            <span class="contact-card__label">Projects</span>
+            <h3>Review the work first</h3>
+            <p>Open the live repository page to get a fast read on the kind of output behind the profile.</p>
+            <span class="contact-card__link">Go to projects</span>
+          </a>
+          <a class="contact-card" href="stack.html">
+            <span class="contact-card__label">Stack</span>
+            <h3>Check the capability fit</h3>
+            <p>Use the stack page to see how the work balances frontend taste with backend sense.</p>
+            <span class="contact-card__link">Go to stack</span>
+          </a>
+          <a class="contact-card" href="https://github.com/asedits57" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__label">GitHub</span>
+            <h3>Open the live profile</h3>
+            <p>Jump directly to the public account for repositories, updates, and activity.</p>
+            <span class="contact-card__link">Open GitHub</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section shell reveal" aria-labelledby="contact-cta-title">
+        <div class="cta-panel">
+          <p class="section-kicker">Build Together</p>
+          <h2 id="contact-cta-title">The navigation now works like a portfolio system, not just a landing page.</h2>
+          <p>
+            Every primary button on the site routes to a real page or a live GitHub
+            destination. That makes the site feel more complete and easier to use.
+          </p>
+          <div class="hero-actions">
+            <a class="button-primary" href="index.html">Back Home</a>
+            <a class="button-secondary" href="about.html">Read About</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <p><span id="current-year"></span> ABISHEK.M / AS_Edits. Contact page for navigation and collaboration entry.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
